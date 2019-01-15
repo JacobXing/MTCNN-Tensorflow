@@ -1,7 +1,9 @@
 #coding:utf-8
 
 from easydict import EasyDict as edict
-
+'''
+pip install easydict
+'''
 config = edict()
 
 config.BATCH_SIZE = 384

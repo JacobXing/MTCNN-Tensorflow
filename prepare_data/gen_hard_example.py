@@ -1,7 +1,7 @@
 #coding:utf-8
 import sys
 #sys.path.append("../")
-from prepare_data.utils import convert_to_square
+from utils import convert_to_square
 
 sys.path.insert(0,'..')
 import numpy as np
@@ -11,12 +11,12 @@ import pickle as pickle
 import cv2
 from train_models.mtcnn_model import P_Net, R_Net, O_Net
 from train_models.MTCNN_config import config
-from prepare_data.loader import TestLoader
+from loader import TestLoader
 from Detection.detector import Detector
 from Detection.fcn_detector import FcnDetector
 from Detection.MtcnnDetector import MtcnnDetector
 from utils import *
-from prepare_data.data_utils import *
+from data_utils import *
 #net : 24(RNet)/48(ONet)
 #data: dict()
 def save_hard_example(net, data,save_path):

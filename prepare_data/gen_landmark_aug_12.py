@@ -7,9 +7,9 @@ import cv2
 import numpy as np
 import numpy.random as npr
 
-from prepare_data.BBox_utils import getDataFromTxt, BBox
-from prepare_data.Landmark_utils import rotate, flip
-from prepare_data.utils import IoU
+from BBox_utils import getDataFromTxt, BBox
+from Landmark_utils import rotate, flip
+from utils import IoU
 
 
 
@@ -46,7 +46,7 @@ def GenerateData(ftxt,data_path,net,argument=False):
         #print imgPath
         F_imgs = []
         F_landmarks = []
-        #print(imgPath)
+        print(imgPath)
         img = cv2.imread(imgPath)
 
         assert(img is not None)

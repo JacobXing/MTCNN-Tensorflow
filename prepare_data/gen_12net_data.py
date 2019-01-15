@@ -1,10 +1,19 @@
 #coding:utf-8
+
+'''
+pip install opencv-python
+
+pip install easydict
+需要在上上级文件夹中创建一个名字为DATA的文件夹
+需要将下载的WIDER_train文件夹放在DATA文件夹中
+即可运行此程序
+'''
 import os
 import cv2
 import numpy as np
 import numpy.random as npr
 
-from prepare_data.utils import IoU
+from utils import IoU
 
 anno_file = "wider_face_train.txt"
 im_dir = "../../DATA/WIDER_train/images"

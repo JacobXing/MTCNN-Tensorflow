@@ -7,11 +7,11 @@ import numpy as np
 import tensorflow as tf
 from tensorboard.plugins import projector
 
-from train_models.MTCNN_config import config
+from MTCNN_config import config
 
 sys.path.append("../prepare_data")
 print(sys.path)
-from prepare_data.read_tfrecord_v2 import read_multi_tfrecords,read_single_tfrecord
+from read_tfrecord_v2 import read_multi_tfrecords,read_single_tfrecord
 
 import random
 import cv2
